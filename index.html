@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56ce35f76e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+
+   
+    <title>GiperAks</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-content">
+                    <div class="header__top-left">
+                        <a href="#" class="header__top-link">Əlaqə</a>
+                    </div>
+                    <div class="header__top-right">
+                        <a href="#" class="header__top-link"><i class="fa-solid fa-location-dot"></i> Yer xəritəsi</a>
+                        <select name="currency" id="currency-select" class="header__top-select">
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EURO (€)</option>
+                            <option value="AZN">AZN (₼)</option>
+                        </select>
+                        <select name="language" id="language-select" class="header__top-select">
+                            <option value="EN">ENG</option>
+                            <option value="AZ">AZ</option>
+                            <option value="RU">RU</option>
+                        </select>
+                        <div class="header__top-login">
+                            <a href="#">Daxil ol</a>
+                            /
+                            <a href="#">Qeydiyyat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__mid">
+            <div class="container">
+                <div class="header__mid-content">
+                    <div class="header__mid-left">
+                        <div class="header__mid-logo">
+                            GiperAks
+                        </div>
+                        <div class="header__mid-form">
+                            <div class="header__mid-categories">
+                                <select class="header__mid-select" name="category" id="category-select">
+                                    <option value="Telefonlar">Telefonlar</option>
+                                    <option value="Saatlar">Saatlar və qolbaqlar</option>
+                                    <option value="Aksesuarlar">Aksesuarlar</option>
+                                    <option value="Tv">Tv, audio</option>
+                                    <option value="Kompüter">Kompüter və ofis</option>
+                                </select>
+                            </div>
+                            <div class="header__mid-search">
+                                <input type="text" placeholder="Məhsul və ya satıcı axtarın">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mid-right">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i> Səbət</a>
+                        <a href="#"><i class="fa-solid fa-heart"></i> İstək siyahısı</a>
+                        <button>Mağaza aç</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Telefonlar</a>
+                        <div class="header__nav-subnav">
+                            <div class="header__subnav-left">
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Mobil telefon</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Planşetlər</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Elektron kitab</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Ev telefonları</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Düyməli telefonlar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Sim Nömrələr</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">LCD ekran</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Korpuslar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Batareya</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Saatlar və qolbaqlar</a>
+                        <div class="header__nav-subnav">
+                            <div class="header__subnav-left">
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Saatlar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Ağıllı saat</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Ağıllı qolbaqlar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Aksesuarlar</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Uşaq üçün</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Aksesuarlar</a>
+                        <div class="header__nav-subnav">
+                            <div class="header__subnav-left">
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Qulaqlıqlar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">USB naqillər</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Enerji ötürücü</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Power bank</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Çexollar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Yaddaş kartı</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Selfi çubuqları</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">LED lampalar</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Qoruyucu şüşələr</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Açarlıq</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Dəstlər</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Qulaqlıq Aksessuarları</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Tv, audio</a>
+                        <div class="header__nav-subnav">
+                            <div class="header__subnav-left">
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Televizorlar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Videokameralar</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Fotoaparatlar</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Portativ akustika</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Musiqi mərkəzi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Kompüter və ofis</a>
+                        <div class="header__nav-subnav">
+                            <div class="header__subnav-left">
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Monitor</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Monoblok</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Noutbuklar</a>
+                                    </li>
+                                </ul>
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Sistem blokları</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="#" class="header__subnav-link">Aksesuarlar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="login">
+        <div class="login_after"></div>
+        <div class="login-block">
+            <button class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h2 class="login-title">Daxil ol</h2>
+            <form id="form_login">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control auth-form-input" placeholder="E-poçt ünvanı"
+                        maxlength="255" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control auth-form-input" placeholder="Şifrə"
+                        minlength="4" maxlength="255" required="">
+                </div>
+                <div class="form-group text-right">
+                    <a href="#" class="link-forgot-password">Şifrəni
+                        unutmusunuz?</a>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-md btn-custom btn-block">Daxil ol</button>
+                </div>
+                <p class="p-social-media m-0 m-t-5">Hesabınız yoxdur?&nbsp;<a href="#" class="link">Qeydiyyatdan keç</a>
+                </p>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="mobile__header">
+        <div class="container">
+            <div class="mobile__header-content">
+                <div class="mobile__header-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobile__header-logo">
+                    GiperAks
+                </div>
+                <div class="mobile__header-links">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__search">
+            <div class="container">
+                <div class="header__mid-form">
+                    <div class="header__mid-categories">
+                        <select class="header__mid-select" name="category" id="category-select">
+                            <option value="Telefonlar">Telefonlar</option>
+                            <option value="Saatlar">Saatlar və qolbaqlar</option>
+                            <option value="Aksesuarlar">Aksesuarlar</option>
+                            <option value="Tv">Tv, audio</option>
+                            <option value="Kompüter">Kompüter və ofis</option>
+                        </select>
+                    </div>
+                    <div class="header__mid-search">
+                        <input type="text" placeholder="Məhsul və ya satıcı axtarın">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mobile__nav">
+        <div class="mobile__nav-after"></div>
+        <div class="mobile__nav-content">
+            <button>Mağaza aç</button>
+            <ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Telefonlar <i>></i></a>
+                    <ul class="mobile__subnav-list">
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link"><i>&#x3c</i> Telefonlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Bütün</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Mobil telefon</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Planşetlər</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Elektron kitab</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Ev telefonları</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Düyməli telefonlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Sim Nömrələr</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">LCD ekran</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Korpuslar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Batareya</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Saatlar və qolbaqlar <i>></i></a>
+                    <ul class="mobile__subnav-list">
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link"><i>&#x3c</i> Saatlar və qolbaqlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Bütün</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Saatlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Ağıllı saat</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Ağıllı qolbaqlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Aksesuarlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Uşaq üçün</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Aksesuarlar <i>></i></a>
+                    <ul class="mobile__subnav-list">
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link"><i>&#x3c</i> Aksesuarlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Bütün</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Qulaqlıqlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">USB naqillər</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Enerji ötürücü</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Power bank</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Çexollar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Yaddaş kartı</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Selfi çubuqları</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">LED lampalar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Qoruyucu şüşələr</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Açarlıq</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Dəstlər</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Qulaqlıq Aksessuarları</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Tv, audio <i>></i></a>
+                    <ul class="mobile__subnav-list">
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link"><i>&#x3c</i> Tv, audio</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Bütün</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Televizorlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Videokameralar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Fotoaparatlar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Portativ akustika</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Musiqi mərkəzi</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Kompüter və ofis <i>></i></a>
+                    <ul class="mobile__subnav-list">
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link"><i>&#x3c</i> Kompüter və ofis</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Bütün</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Monitor</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Monoblok</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Noutbuklar</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Sistem blokları</a>
+                        </li>
+                        <li class="mobile__subnav-item">
+                            <a href="#" class="mobile__subnav-link">Aksesuarlar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Istək siyahısı</a>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Əlaqə</a>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Bloq</a>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link" id="mobile-login">Daxil ol</a>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Qeydiyyatdan keç</a>
+                </li>
+                <li class="mobile__nav-item">
+                    <a href="#" class="header__top-link"><i class="fa-solid fa-location-dot"></i> Yer xəritəsi</a>
+                </li>
+                <li class="mobile__nav-item">
+                    <select name="currency" id="currency-select" class="header__top-select">
+                        <option value="USD">USD ($)</option>
+                        <option value="EUR">EURO (€)</option>
+                        <option value="AZN">AZN (₼)</option>
+                    </select>
+                </li>
+                <li class="mobile__nav-item">
+                    <select name="language" id="language-select" class="header__top-select">
+                        <option value="EN">ENG</option>
+                        <option value="AZ">AZ</option>
+                        <option value="RU">RU</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!--2 ci hisse pictures-->
+
+
+
+
+<div class="imgs">
+    <h3>Yenilik zamanı</h3>
+</div>
+
+
+<div class="container1">
+
+    <div class="cexollar">
+        <h4>Çexollar</h4>
+    </div>
+    <div class="komputer">
+        <h4>Komputer və Ofis</h4>
+    </div>
+    <div class="playstation">
+        <h4>Playstation</h4>
+    </div>
+
+
+
+    <div class="saat">
+        <h4>Saatlar ve Qolbaqlar</h4>
+    </div>
+
+    <div class="usb ">
+        <h4>Usb naqillər</h4>
+    </div>
+
+
+</div>
+
+<section class="product ">
+    <h2 class="category">best selling</h2>
+    
+
+        <div class="cards ">
+    
+        
+        <div class="card">
+        
+            <div class="image">
+                <img src="./img/img1.jpg" alt=""class ="thumb">
+               
+            </div>
+            <div class="info">
+                <h2 class="brand">Kemin KM-26 avtomobil soyuducusu</h2>
+                <p class="description">MM store</p>
+                <span class="price">$200</span>
+                
+            </div>
+        
+    </div>
+    <div class="container">
+        
+        <div class="card">
+        
+            <div class="image">
+               
+                <img src="./img/img2.jpg" alt=""class ="thumb">
+                
+            </div>
+            <div class="info">
+                <h2 class="brand">Samsung Galaxy S21 </h2>
+                <p class="description">MM store</p>
+                <span class="price">$300</span>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="card">
+        
+            <div class="image">
+                
+                <img src="./img/img3.jpg" alt=""class ="thumb">
+                
+            <div class="info">
+                <h2 class="brand">Samsung QE85Q77A</h2>
+                <p class="description">MM store</p>
+                <span class="price">$250</span>
+               
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        
+        <div class="card">
+        
+            <div class="image">
+                
+                <img src="./img/img4.jpg" alt=""class ="thumb">
+              
+            </div>
+            <div class="info">
+                <h2 class="brand">Apple Air Tag leather</h2>
+                <p class="description">MM store</p>
+                <span class="price">$200</span>
+              
+            </div>
+        </div>
+    </div>
+    
+
+        </div>
+</section>
+
+
+<div class="yeni">
+    <h2 class="category">Yeni gelenler</h2>
+
+
+    <div class="cards ">
+
+<div class="container">
+    
+    <div class="card">
+    
+        <div class="image">
+            
+            <img src="./img/img9.jpg" alt=""class ="thumb">
+            
+        </div>
+        <div class="info">
+            <h2 class="brand">WF-0096 Avtomobil siqaret</h2>
+            <p class="description">MM store</p>
+            <span class="price">$300</span>
+           
+        </div>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="card">
+    
+        <div class="image">
+           
+            <img src="./img/img6.jpg" alt=""class ="thumb">
+            
+        </div>
+        <div class="info">
+            <h2 class="brand">Casio Youth digital saat</h2>
+            <p class="description">MM store</p>
+            <span class="price">$250</span>
+           
+        </div>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="card">
+    
+        <div class="image">
+           
+            <img src="./img/img7.jpg" alt=""class ="thumb">
+           
+        </div>
+        <div class="info">
+            <h2 class="brand">SONY SRS-XB23</h2>
+            <p class="description">MM store</p>
+            <span class="price">$200</span>
+          
+        </div>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="card">
+    
+        <div class="image">
+            
+            <img src="./img/img8.jpg" alt=""class ="thumb">
+           
+        </div>
+        <div class="info">
+            <h2 class="brand">Xiaomi smart saat</h2>
+            <p class="description">MM store</p>
+            <span class="price">$20</span>
+            
+        </div>
+    </div>
+</div>
+</div>
+    
+    
+
+
+</div>
+
+
+<section class="car ">
+    <h2 class="category">Avtomobil aksesuarları</h2>
+    
+
+        <div class="cards">
+    
+        
+        <div class="card">
+        
+            <div class="image">
+                
+                <img src="./img/img11.jpg" alt=""class ="thumb">
+                
+            </div>
+            <div class="info">
+                <h2 class="brand">Hoco “CA69 Sagesse” maqnit Qara - Tutucu</h2>
+                <p class="description">MM store</p>
+                <span class="price">$200</span>
+                
+            </div>
+        </div>
+   
+    
+        
+        <div class="card">
+        
+            <div class="image">
+                
+                <img src="./img/img12.jpg" alt=""class ="thumb">
+                
+            </div>
+            <div class="info">
+                <h2 class="brand">T17 Fm modulyator itkisiz MP3</h2>
+                <p class="description">MM store</p>
+                <span class="price">$300</span>
+               
+            </div>
+        </div>
+    
+    
+        
+        <div class="card">
+        
+            <div class="image">
+                
+                <img src="./img/img13.jpg" alt=""class ="thumb">
+            </div>
+            <div class="info">
+                <h2 class="brand">Joyroom telefon tutacağı</h2>
+                <p class="description">MM store</p>
+                <span class="price">$250</span>
+               
+            </div>
+        </div>
+   
+    
+        
+        <div class="card">
+        
+            <div class="image">
+               
+                <img src="./img/img14.jpg" alt=""class ="thumb">
+                
+            </div>
+            <div class="info">
+                <h2 class="brand">DVR SKY Z16</h2>
+                <p class="description">MM store</p>
+                <span class="price">$200</span>
+              
+            </div>
+        </div>
+    
+    
+</section>
+
+
+<div class="son-xeber">
+    <h2 class="category">Ən son Xəbərlər</h2>
+
+
+    <div class="cards ">
+<div class="card">
+    
+    
+    
+        <div class="img">
+            
+            <img src="./img/img16.jpg" alt=""class ="xeber-img">
+            
+        </div>
+        <div class="info">
+            <h2 class="brand">Samsung orta büdcəli yeni Galaxy M32 smartfonunu təqdim edib - QİYMƏTİ</h2>
+            <p class="description"> Samsung şirkəti Galaxy M seriyasının yeni smartfon modelini təqdim edib. Söhbət, Galaxy M32-dən gedir.</p>
+            
+            
+        
+    </div>
+</div>
+<div class="card">
+    
+    
+    
+        <div class="img">
+            
+            <img src="./img/img17.jpg" alt=""class ="xeber-img">
+            
+        </div>
+        <div class="info">
+            <h2 class="brand">Xiaomi smartfonların səs vasitəsilə şarj olunmaları texnologiyası üzərində çalışır</h2>
+            <p class="description">Xiaomi mühəndisləri cihazlar üçün enerji mənbəyi kimi səs dalğalarından istifadə texnologiyası üzərində çalışırlar.</p>
+            
+           
+        
+    </div>
+</div>
+<div class="card">
+    
+   
+    
+        <div class="img">
+            
+            <img src="./img/img18.jpg" alt=""class ="xeber-img">
+            
+        </div>
+        <div class="info">
+            <h2 class="brand">Apple şirkəti iOS 15-i təqdim edib</h2>
+            <p class="description">Tərtibatçılar üçün nəzərdə tutulmuş WWDC 2021 konfransı çərçivəsində Apple şirkəti iOS 15 əməliyyat sistemini təqdim edib.</p>
+            
+           
+        
+    </div>
+</div>
+
+
+</div>
+    
+    
+
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__block">
+                <div class="footer__logo">
+                    <div class="header__mid-logo">
+                        <a href="index.html">GiperAks</a>
+                    </div>
+                    <p class="footer__text">
+                        GiperAks.az topdan və pərakəndə ticarət sahiblərinin məhsullarını və xidmətlərini onlayn və
+                        minimal xərclə satmasına imkan verən bənzərsiz alış-veriş saytıdır.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__block">
+                <h4 class="footer__header">GiperAks.az</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Ev</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Blog</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Shops</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Reklam</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Help center</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <h4 class="footer__header">Məlumat</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Zəmanət</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Çatdırılma</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Gizlilik Siyasəti</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Qaytarma qaydası</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Şərtlər və qaydalar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <h4 class="footer__header">Bizi izlə</h4>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-telegram"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link"><i class="fa-solid fa-rss"></i></a>
+                    </li>
+                </ul>
+                <h4 class="footer__header">Yeniliklər</h4>
+                <div class="footer__form">
+                    <input type="email" placeholder="E-poçtunuzu daxil edin">
+                    <button>Abunə ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="footer__copyright">
+    <div class="container">
+        <div class="footer__copyright-content">
+            © 2022 GiperAks.az - Bütün hüquqlar qorunur.
+        </div>
+    </div>
+</div>
+
+<div class="back-to-top">
+    <i class="fa-solid fa-chevron-up"></i>
+</div>
+
+
+    
+    <script src="./script/script.js"></script>
+</body>
+</html>
